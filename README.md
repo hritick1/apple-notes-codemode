@@ -23,6 +23,10 @@ It provides:
 3. **🌐 REST API & Interactive Swagger UI**: Full FastAPI server with OpenAPI 3.0 schema and interactive browser documentation at `http://127.0.0.1:8000/docs`.
 4. **🔒 100% Local & Private**: Direct communication via macOS JavaScript for Automation (JXA) and `osascript`. No cloud subscriptions, no third-party telemetry.
 
+<p align="center">
+  <img src="assets/demo.jpg" alt="Apple Notes MCP in Action" width="750" style="border-radius: 8px;"/>
+</p>
+
 ---
 
 ## 🚀 The Paradigm Shift: Why "Code Mode"?
