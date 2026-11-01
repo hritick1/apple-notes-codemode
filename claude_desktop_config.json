@@ -1,12 +1,12 @@
 {
   "mcpServers": {
     "apple-notes": {
-      "command": "/Users/hritickjha/Learning/apple-notes-codemode/.venv/bin/python3",
+      "command": "/ABSOLUTE/PATH/TO/apple-notes-codemode/.venv/bin/python3",
       "args": [
-        "/Users/hritickjha/Learning/apple-notes-codemode/mcp_server.py"
+        "/ABSOLUTE/PATH/TO/apple-notes-codemode/mcp_server.py"
       ],
       "env": {
-        "PYTHONPATH": "/Users/hritickjha/Learning/apple-notes-codemode"
+        "PYTHONPATH": "/ABSOLUTE/PATH/TO/apple-notes-codemode"
       }
     }
   }

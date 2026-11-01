@@ -626,8 +626,11 @@ def dashboard():
         <pre><code>{
   "mcpServers": {
     "apple-notes": {
-      "command": "/Users/hritickjha/Learning/.venv/bin/python3",
-      "args": ["/Users/hritickjha/Learning/mcp_server.py"]
+      "command": "/ABSOLUTE/PATH/TO/apple-notes-codemode/.venv/bin/python3",
+      "args": ["/ABSOLUTE/PATH/TO/apple-notes-codemode/mcp_server.py"],
+      "env": {
+        "PYTHONPATH": "/ABSOLUTE/PATH/TO/apple-notes-codemode"
+      }
     }
   }
 }</code></pre>

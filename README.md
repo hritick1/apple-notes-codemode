@@ -150,26 +150,40 @@ Open your browser:
 ## 🤖 AI Client Integration
 
 ### 1. Claude Desktop Setup
-Open `~/Library/Application Support/Claude/claude_desktop_config.json` and add:
+
+To connect Apple Notes to Claude Desktop:
+
+1. Locate or create your Claude Desktop configuration file:
+   - **macOS Path**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+2. Find the absolute path of this cloned repository by running:
+   ```bash
+   cd apple-notes-codemode && pwd
+   ```
+3. Add the server configuration under `"mcpServers"` in `claude_desktop_config.json`, replacing `/ABSOLUTE/PATH/TO/apple-notes-codemode` with your project's path:
 
 ```json
 {
   "mcpServers": {
     "apple-notes": {
-      "command": "/Users/hritickjha/Learning/apple-notes-codemode/.venv/bin/python3",
+      "command": "/ABSOLUTE/PATH/TO/apple-notes-codemode/.venv/bin/python3",
       "args": [
-        "/Users/hritickjha/Learning/apple-notes-codemode/mcp_server.py"
+        "/ABSOLUTE/PATH/TO/apple-notes-codemode/mcp_server.py"
       ],
       "env": {
-        "PYTHONPATH": "/Users/hritickjha/Learning/apple-notes-codemode"
+        "PYTHONPATH": "/ABSOLUTE/PATH/TO/apple-notes-codemode"
       }
     }
   }
 }
 ```
 
+> **Note**: A starter configuration file is also provided in the repo at [`claude_desktop_config.json`](claude_desktop_config.json).
+
 ### 2. Antigravity IDE / Cursor / Open WebUI
-Configure an MCP tool definition pointing to `python3 mcp_server.py`.
+Configure an MCP server with the `stdio` transport using:
+- **Command**: `/ABSOLUTE/PATH/TO/apple-notes-codemode/.venv/bin/python3`
+- **Args**: `["/ABSOLUTE/PATH/TO/apple-notes-codemode/mcp_server.py"]`
+- **Environment**: `PYTHONPATH=/ABSOLUTE/PATH/TO/apple-notes-codemode`
 
 ---
 
